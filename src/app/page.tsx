@@ -1,7 +1,10 @@
+import * as m from "@/paraglide/messages"
+
 export default function Home() {
   return (
-    <div>
-      <h1>inlang다국어테스트</h1>
-    </div>
-  );
+    <button>
+      {/* 입력하는 순간 자동완성 됨. 오타나면 빌드 에러. */}
+      {m.btn_save()} 
+    </button>
+  )
 }

@@ -1,3 +1,5 @@
+import { LanguageProvider } from "@inlang/paraglide-next"
+import { languageTag } from "@/paraglide/runtime.js"
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -12,10 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <LanguageProvider>
+   <html lang="ko">
       <body>
         {children}
       </body>
     </html>
+ </LanguageProvider>
   );
 }
