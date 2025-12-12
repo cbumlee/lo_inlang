@@ -1,4 +1,4 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"channel_save": "{name}저장"
+	"channel_save": "{name저장"
 }
