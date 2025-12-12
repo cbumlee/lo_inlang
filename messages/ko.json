@@ -1,5 +1,4 @@
 {
-  "$schema": "https://inlang.com/schema/inlang-message-format",
-  "channel_save": "저장"
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"channel_save": "파일저장"
 }
-
