@@ -6,13 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "paraglide": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide"
   },
   "dependencies": {
-    "next": "15.2.4",
+    "@inlang/paraglide-js": "^1.11.8",
+    "next": "16.0.8",
     "react": "19.2.1",
-    "react-dom": "19.2.1",
-    "@inlang/paraglide-next": "0.8.1"
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -20,9 +21,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "16.0.8",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "@inlang/paraglide-js": "1.11.8"
+    "typescript": "^5"
   }
 }
