@@ -2,17 +2,15 @@
 
 import * as m from "@/paraglide/messages"
 import { setLanguageTag } from "@/paraglide/runtime"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export default function Home() {
   const [lang, setLang] = useState<"en" | "ko">("en")
   
-  useEffect(() => {
-    setLanguageTag(lang)
-  }, [lang])
-  
   const toggleLanguage = () => {
-    setLang(prev => prev === "en" ? "ko" : "en")
+    const newLang = lang === "en" ? "ko" : "en"
+    setLang(newLang)
+    setLanguageTag(newLang)
   }
   
   return (
